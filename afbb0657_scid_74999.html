@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <title></title>
+    <script type="text/javascript">
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://s4.cnzz.com/z_stat.php?id=1279503544&web_id=1279503544';
+        script.onload = script.onreadystatechange = function() {
+            if((!script.readyState || script.readyState === "loaded" || script.readyState === "complete")){
+                window.location.href = "https://cpu.baidu.com/1032/afbb0657?scid=74999";
+                // Handle memory leak in IE
+                script.onload = script.onreadystatechange = null;
+                if ( head && script.parentNode ) {
+                    head.removeChild( script );
+                }
+            }
+        };
+        // Use insertBefore instead of appendChild  to circumvent an IE6 bug.
+        head.insertBefore( script, head.firstChild );
+    </script>
+</head>
+<body></body>
+</html>
