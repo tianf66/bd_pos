@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        iframe {
+            display: block;
+            height: 100vh;
+            width: 100vw;
+        }
+        .task {
+            width: 100%;
+            height: 40px;
+            background: #000;
+            opacity: 0.7;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+    <script type="text/javascript">
+        if(Math.ceil(Math.random() * 100) < 40) {
+            window.location.href = 'https://cpu.baidu.com/1032/d6b76134?scid=75161';
+        }
+    </script>
+</head>
+<body>
+    <!-- 阅读3篇文章并体验60秒后获得更多奖励 -->
+    <iframe src="https://cpu.baidu.com/1032/d6b76134?scid=75161" frameborder="0" scrolling="yes"></iframe>
+    <!-- <div class="task">阅读<span style="color: yellow;"><span id="timer">60</span>秒</span>并至少阅读<span style="color: yellow;">3篇</span>文章后获取更多奖励</div> -->
+    <div class="task">阅读<span style="color: yellow;">3篇</span>文章并体验<span style="color: yellow;"><span id="timer">60</span>秒</span>后获得更多奖励</div>
+    <script type="text/javascript">
+        var timeCount  = 60;
+        var taskTime = document.getElementById('timer');
+        var timer = setInterval(function() {
+            timeCount--;
+            taskTime.innerHTML = timeCount;
+            if(timeCount == 0) {
+                clearInterval(timer);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
